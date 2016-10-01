@@ -6,14 +6,14 @@
 import decimal
 
 
-def fahrenheit_to_celsius(degree):
+def fahrenheit_to_celsius(degrees):
     """This is formula to convert the degrees Fahrenheit to Celsius.
 
     Args:
-        degree(mixed): Just a random number.
+        degrees(str): Just a random number.
 
     Returns:
-        Mixed: Calculated decimal number.
+        str: Calculated decimal number.
 
     Examples:
         >>> fahrenheit_to_celsius(212)
@@ -21,8 +21,8 @@ def fahrenheit_to_celsius(degree):
         >>> fahrenheit_to_celsius(90)
         Decimal('32.22222222222222222222222222')
     """
-    decimal_degree = decimal.Decimal(degree)
+    decimal_degrees = decimal.Decimal(degrees)
     decimal_32 = decimal.Decimal('32')
     decimal_5 = decimal.Decimal('5')
     decimal_9 = decimal.Decimal('9')
-    return (decimal_degree - decimal_32) * decimal_5 / decimal_9
+    return (decimal_degrees - decimal_32) * decimal_5 / decimal_9
