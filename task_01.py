@@ -21,7 +21,7 @@ def fahrenheit_to_celsius(degrees):
         >>> fahrenheit_to_celsius(90)
         Decimal('32.22222222222222222222222222')
     """
-    decimal_degrees = decimal.Decimal(degrees)
+    decimal_degrees = decimal.Decimal(str(degrees))
     decimal_32 = decimal.Decimal('32')
     decimal_5 = decimal.Decimal('5')
     decimal_9 = decimal.Decimal('9')
