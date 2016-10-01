@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Task 01."""
+"""Task 01-03."""
 
 
 import decimal
@@ -32,7 +32,7 @@ def fahrenheit_to_celsius(degrees):
 
 
 def celsius_to_kelvin(degrees):
-    """This formula to convert the degrees Celsius to Kelvin"
+    """This is formula to convert the degrees Celsius to Kelvin"
 
     Args:
         degrees(str): Just a random number.
@@ -47,3 +47,16 @@ def celsius_to_kelvin(degrees):
         Decimal('274.15')
     """
     return decimal.Decimal(str(degrees)) + ABSOLUTE_DIFFERENCE
+
+
+def fahrenheit_to_kelvin(degrees):
+    """This is formula to convert Fahrenheit_to_Kelvin.
+
+    Args:
+        degrees(str): Just a random number.
+
+    Returns:
+        str: Calculated decimal number using fahrenheit_to_celsius and celsius_t
+        o_kelvin functions.
+    """
+    return celsius_to_kelvin(fahrenheit_to_celsius(degrees))
